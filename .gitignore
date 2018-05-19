@@ -1,0 +1,23 @@
+# Eclipse top-level resource files are excluded ...
+.metadata/
+
+# Some Eclipse project resource files should never be checked in ...
+.recommenders/
+.settings/
+
+# IntelliJ IDEA files are excluded ...
+.idea/
+out/
+*.iml
+*.ipr
+*.iws
+
+# These are names of directories typically used for generated content, so are ignored ...
+bin/
+build/
+deploy/
+target/
+*.class
+
+.DS_Store/
+
