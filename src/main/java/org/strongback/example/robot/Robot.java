@@ -25,13 +25,11 @@ import org.strongback.hardware.Hardware;
 import org.strongback.util.Values;
 
 import edu.wpi.first.wpilibj.IterativeRobot;
-import edu.wpi.first.wpilibj.livewindow.LiveWindow;
 
 /**
  * A very simple tank-drive robot controlled with a Logitech Attack 3D plugged into port 1 on the Driver Station for
  * arcade-style driver input. The robot has two motors on each side, and each motor is controlled by one Talon motor controller.
- * The robot only supports teleoperated mode, driving forward at 50% power for 5 seconds in autonomous, and in test mode starts
- * the {@link LiveWindow}.
+ * The robot only supports teleoperated mode and driving forward at 50% power for 5 seconds in autonomous.
  *
  * @author Randall Hauch
  */
@@ -98,10 +96,5 @@ public class Robot extends IterativeRobot {
         drive.stop();
         // Tell Strongback that the robot is disabled so it can flush all data and kill all commands.
         Strongback.disable();
-    }
-
-    @Override
-    public void testInit() {
-        LiveWindow.run();
     }
 }
